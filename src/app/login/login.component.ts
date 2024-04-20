@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
+import {MatCard} from "@angular/material/card";
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [],
-  template: `
-    <p>
-      login works!
-    </p>
-  `,
-  styles: ``
+  imports: [
+    MatCard
+  ],
+  templateUrl: './login.component.html',
+  styleUrl: './login.component.scss'
 })
 export class LoginComponent {
 
